@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Paradise</h1>
+        <br>
+        <h3> Your one stop solution for
+            <span class="text-slider-items"> 
+               
+            </span> 
+            <strong class="text-slider"></strong> 
+  
+        </h3> 
+        <br><br><br><br><br><br>
+        <div class="buttons">
+            &nbsp;&nbsp;
+            <button onclick="document.location=" type="button" class="btn btn-primary"> Resort </button>
+            &nbsp;
+            <button onclick="document.location='https://www.arkafoodvillage.com'" type="button" class="btn btn-warning"> Restaurant </button>
+            &nbsp;
+            <button onclick="document.location=''" type="button" class="btn btn-success"> About Us</button>
+            
+            
+        </div>
+        <div class="color-overlay"></div>
+    </div> 
+    
+    <!-- Import typed.min.js file from typed.js folder -->
+    <script src= 
+        "./typed.js-master/lib/typed.min.js"> 
+    </script> 
+      
+    <!-- Add jquery cdn -->
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> 
+    </script> 
+  
+    <!-- Add this script for successful  
+        implementation of typed.js  -->
+    <script> 
+        if ($(".text-slider").length == 1) { 
+              
+            
+  
+            var typed = new Typed(".text-slider", { 
+                strings: ["Resort", "Homestay", "Restaurant", "Weekend-chillax", "Travel", "Nirvana"], 
+                typeSpeed: 70, 
+                loop: true, 
+                backDelay: 900, 
+                backSpeed: 50, 
+            }); 
+        } 
+    </script> 
+    
+</body>
+</html>
